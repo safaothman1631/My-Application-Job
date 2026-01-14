@@ -1,0 +1,72 @@
+{
+  "common": {
+    "welcome": "Welcome",
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "search": "Search",
+    "categories": "Categories",
+    "services": "Services",
+    "bookings": "Bookings",
+    "profile": "Profile",
+    "settings": "Settings",
+    "save": "Save",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "back": "Back",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Full Name",
+    "phone": "Phone Number",
+    "loginTitle": "Welcome Back",
+    "loginSubtitle": "Login to find trusted professionals",
+    "signupTitle": "Create Account",
+    "forgotPassword": "Forgot Password?"
+  },
+  "home": {
+    "searchPlaceholder": "What service do you need?",
+    "recommendedProviders": "Recommended Providers",
+    "nearbyServices": "Nearby Services"
+  },
+  "booking": {
+    "selectDate": "Select Date",
+    "selectTime": "Select Time",
+    "addNote": "Add Note",
+    "confirmBooking": "Confirm Booking",
+    "bookingSuccess": "Booking created successfully!",
+    "customPrice": "Custom Price (optional)",
+    "serviceFee": "Service Fee (15%)",
+    "totalPrice": "Total Price"
+  },
+  "chat": {
+    "typeMessage": "Type a message...",
+    "send": "Send",
+    "noMessages": "No messages yet",
+    "startConversation": "Start the conversation!"
+  },
+  "emptyStates": {
+    "noBookings": {
+      "title": "No bookings yet",
+      "description": "Start by booking your first service!"
+    },
+    "noServices": {
+      "title": "No services found",
+      "description": "Try adjusting your search or filters."
+    },
+    "noNotifications": {
+      "title": "No notifications",
+      "description": "You're all caught up!"
+    }
+  },
+  "errors": {
+    "offline": "No internet connection",
+    "tryAgain": "Please try again",
+    "serverError": "Server error occurred",
+    "invalidCredentials": "Invalid email or password"
+  }
+}

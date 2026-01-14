@@ -1,0 +1,72 @@
+{
+  "common": {
+    "welcome": "بەخێربێی",
+    "login": "چوونە ژوورەوە",
+    "signup": "خۆتۆمارکردن",
+    "logout": "دەرچوون",
+    "search": "گەڕان",
+    "categories": "جۆرەکان",
+    "services": "خزمەتگوزاریەکان",
+    "bookings": "داواکاریەکان",
+    "profile": "پڕۆفایل",
+    "settings": "ڕێکخستنەکان",
+    "save": "پاشەکەوتکردن",
+    "cancel": "پاشگەزبوونەوە",
+    "continue": "بەردەوامبە",
+    "back": "گەڕانەوە",
+    "loading": "چاوەڕوانبە...",
+    "error": "هەڵە",
+    "success": "سەرکەوتوو"
+  },
+  "auth": {
+    "email": "ئیمەیڵ",
+    "password": "وشەی نهێنی",
+    "fullName": "ناوی تەواو",
+    "phone": "ژمارەی مۆبایل",
+    "loginTitle": "بەخێربێیتەوە",
+    "loginSubtitle": "بچۆ ژوورەوە بۆ دۆزینەوەی پیشەسازی باوەڕپێکراو",
+    "signupTitle": "خۆتۆمارکردن",
+    "forgotPassword": "وشەی نهێنیت لەبیر چووە؟"
+  },
+  "home": {
+    "searchPlaceholder": "چ خزمەتگوزاریەکت پێویستە؟",
+    "recommendedProviders": "پیشەسازە پێشنیارکراوەکان",
+    "nearbyServices": "خزمەتگوزاریە نزیکەکان"
+  },
+  "booking": {
+    "selectDate": "بەروار هەڵبژێرە",
+    "selectTime": "کات هەڵبژێرە",
+    "addNote": "تێبینی زیاد بکە",
+    "confirmBooking": "داواکاری پشتڕاست بکەرەوە",
+    "bookingSuccess": "داواکاریەکەت بەسەرکەوتوویی تۆمار کرا!",
+    "customPrice": "نرخی پێشنیارکراو (دڵخواز)",
+    "serviceFee": "کرێی سەکۆ (15%)",
+    "totalPrice": "کۆی گشتی"
+  },
+  "chat": {
+    "typeMessage": "پەیامێک بنووسە...",
+    "send": "ناردن",
+    "noMessages": "هێشتا هیچ پەیامێک نییە",
+    "startConversation": "یەکەم پەیامت بنێرە!"
+  },
+  "emptyStates": {
+    "noBookings": {
+      "title": "هیچ داواکاریەکت نییە",
+      "description": "دەستپێبکە و یەکەم خزمەتگوزارییەکەت داوابکە!"
+    },
+    "noServices": {
+      "title": "هیچ خزمەتگوزاریەک نەدۆزرایەوە",
+      "description": "هەوڵبدە بە وشەی جیاواز بگەڕێیت یان فلتەرەکان بگۆڕە."
+    },
+    "noNotifications": {
+      "title": "هیچ ئاگادارکردنەوەیەک نییە",
+      "description": "هەموو شتێک بینیوتەوە!"
+    }
+  },
+  "errors": {
+    "offline": "هێڵی ئینتەرنێت نییە",
+    "tryAgain": "تکایە دووبارە هەوڵبدەرەوە",
+    "serverError": "کێشەیەک ڕوویدا لە سێرڤەر",
+    "invalidCredentials": "ئیمەیڵ یان وشەی نهێنی هەڵەیە"
+  }
+}

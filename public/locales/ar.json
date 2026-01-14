@@ -1,0 +1,19 @@
+{
+  "welcome": "مرحبا",
+  "home": "الرئيسية",
+  "services": "الخدمات",
+  "bookings": "الحجوزات",
+  "profile": "الملف الشخصي",
+  "logout": "تسجيل الخروج",
+  "login": "تسجيل الدخول",
+  "signup": "التسجيل",
+  "search": "بحث",
+  "categories": "الفئات",
+  "providers": "مقدمو الخدمات",
+  "book_now": "احجز الآن",
+  "view_details": "عرض التفاصيل",
+  "my_bookings": "حجوزاتي",
+  "settings": "الإعدادات",
+  "notifications": "الإشعارات",
+  "help": "المساعدة"
+}

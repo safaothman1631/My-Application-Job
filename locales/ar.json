@@ -1,0 +1,72 @@
+{
+  "common": {
+    "welcome": "مرحباً",
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب",
+    "logout": "تسجيل الخروج",
+    "search": "بحث",
+    "categories": "الفئات",
+    "services": "الخدمات",
+    "bookings": "الحجوزات",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "continue": "متابعة",
+    "back": "رجوع",
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجح"
+  },
+  "auth": {
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "fullName": "الاسم الكامل",
+    "phone": "رقم الهاتف",
+    "loginTitle": "مرحباً بعودتك",
+    "loginSubtitle": "سجل الدخول للعثور على مزودي خدمة موثوقين",
+    "signupTitle": "إنشاء حساب جديد",
+    "forgotPassword": "نسيت كلمة المرور؟"
+  },
+  "home": {
+    "searchPlaceholder": "ما الخدمة التي تحتاجها؟",
+    "recommendedProviders": "مزودو الخدمة المقترحون",
+    "nearbyServices": "الخدمات القريبة"
+  },
+  "booking": {
+    "selectDate": "اختر التاريخ",
+    "selectTime": "اختر الوقت",
+    "addNote": "أضف ملاحظة",
+    "confirmBooking": "تأكيد الحجز",
+    "bookingSuccess": "تم حجزك بنجاح!",
+    "customPrice": "السعر المقترح (اختياري)",
+    "serviceFee": "رسوم المنصة (15%)",
+    "totalPrice": "المجموع الكلي"
+  },
+  "chat": {
+    "typeMessage": "اكتب رسالة...",
+    "send": "إرسال",
+    "noMessages": "لا توجد رسائل بعد",
+    "startConversation": "أرسل رسالتك الأولى!"
+  },
+  "emptyStates": {
+    "noBookings": {
+      "title": "لا توجد لديك حجوزات",
+      "description": "ابدأ واحجز خدمتك الأولى!"
+    },
+    "noServices": {
+      "title": "لم يتم العثور على خدمات",
+      "description": "جرب البحث بكلمات مختلفة أو تغيير الفلاتر."
+    },
+    "noNotifications": {
+      "title": "لا توجد إشعارات",
+      "description": "لقد شاهدت كل شيء!"
+    }
+  },
+  "errors": {
+    "offline": "لا يوجد اتصال بالإنترنت",
+    "tryAgain": "يرجى المحاولة مرة أخرى",
+    "serverError": "حدث خطأ في الخادم",
+    "invalidCredentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة"
+  }
+}

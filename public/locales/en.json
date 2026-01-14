@@ -1,0 +1,19 @@
+{
+  "welcome": "Welcome",
+  "home": "Home",
+  "services": "Services",
+  "bookings": "Bookings",
+  "profile": "Profile",
+  "logout": "Logout",
+  "login": "Login",
+  "signup": "Sign Up",
+  "search": "Search",
+  "categories": "Categories",
+  "providers": "Providers",
+  "book_now": "Book Now",
+  "view_details": "View Details",
+  "my_bookings": "My Bookings",
+  "settings": "Settings",
+  "notifications": "Notifications",
+  "help": "Help"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "bazari-seed",
+  "version": "1.0.0",
+  "scripts": {
+    "seed:auth": "node scripts/create-auth-users.js",
+    "seed:db": "node scripts/seed-firebase.js",
+    "seed:all": "npm run seed:auth && npm run seed:db"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.0.0"
+  }
+}

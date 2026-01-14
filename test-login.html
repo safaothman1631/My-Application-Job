@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Login - Bazari</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    button {
+      background: #2563EB;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1D4ED8;
+    }
+    .result {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .success {
+      background: #D1FAE5;
+      border: 1px solid #10B981;
+    }
+    .error {
+      background: #FEE2E2;
+      border: 1px solid #EF4444;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔐 Test Login</h1>
+  <p>Use seeded credentials:</p>
+  <ul>
+    <li>Customer: customer1@bazari.com / 123456</li>
+    <li>Provider: provider1@bazari.com / 123456</li>
+  </ul>
+
+  <form id="loginForm">
+    <input type="email" id="email" placeholder="Email" value="customer1@bazari.com" required>
+    <input type="password" id="password" placeholder="Password" value="123456" required>
+    <button type="submit">Login</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+    import { getAuth, signInWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
+
+    // Firebase config
+    const firebaseConfig = {
+      apiKey: "AIzaSyDCBEwSvShq8vJIvhIyJ29EYAvhgYGzTF4",
+      authDomain: "bazari-app-1f2a7.firebaseapp.com",
+      projectId: "bazari-app-1f2a7",
+      storageBucket: "bazari-app-1f2a7.firebasestorage.app",
+      messagingSenderId: "1029782849043",
+      appId: "1:1029782849043:web:2e3b01838d15cd2e2f4fc1"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const resultDiv = document.getElementById('result');
+
+      try {
+        resultDiv.innerHTML = '<p>⏳ Logging in...</p>';
+        
+        const userCredential = await signInWithEmailAndPassword(auth, email, password);
+        const user = userCredential.user;
+        const token = await user.getIdToken();
+
+        // Fetch user data from Firestore
+        const response = await fetch(`http://localhost:3002/api/auth/me`, {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+
+        const userData = await response.json();
+        console.log('User data:', userData);
+
+        // Store in localStorage (like the real app does)
+        localStorage.setItem('authToken', token);
+        localStorage.setItem('currentUser', JSON.stringify(userData.user || userData));
+
+        resultDiv.className = 'result success';
+        resultDiv.innerHTML = `
+          <h3>✅ Login Successful!</h3>
+          <p><strong>Email:</strong> ${user.email}</p>
+          <p><strong>Role:</strong> ${userData.user?.role || userData.role || 'unknown'}</p>
+          <p><strong>Token:</strong> ${token.substring(0, 50)}...</p>
+          <button onclick="location.href='http://localhost:3002'">Go to Dashboard</button>
+        `;
+      } catch (error) {
+        resultDiv.className = 'result error';
+        resultDiv.innerHTML = `
+          <h3>❌ Login Failed</h3>
+          <p>${error.message}</p>
+        `;
+      }
+    });
+  </script>
+</body>
+</html>
